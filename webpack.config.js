@@ -15,14 +15,15 @@ module.exports = {
     filename: 'bundle.js',
   },
   module: {
-    rules: [
+    loaders: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.js$/,
         exclude: /node_modules/,
-        use: [
-          'babel-loader',
-        ],
-      },
+        loader: 'babel-loader',
+        query: {
+          plugins:[ 'transform-object-rest-spread' ]
+        }
+      }
     ],
   },
   resolve: {
