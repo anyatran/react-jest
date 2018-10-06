@@ -1,2 +1,2 @@
-run `npm start`
-open `file:///Users/anna_tran2008/Projects/0x/index.html`
+# React-jest
+Boilerplate for react + jest project
